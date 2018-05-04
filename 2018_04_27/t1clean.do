@@ -7,31 +7,32 @@ twoway (scatter y m, mlabel(id)), ytitle("Sales (log)") xtitle("Int. inputs (log
 regress y k
 	lvr2plot, mlabel(id) title("Capital (log)")
 predict stdresid, rstandard
+extremes stdresid id
 replace k=. if stdresid>3
 replace k=. if stdresid<-3
 replace K=. if stdresid>3
 replace K=. if stdresid<-3
-extremes stdresid id
 drop stdresid
 
 regress y l
 	lvr2plot, mlabel(id) title("Labor cost (log)")
 predict stdresid, rstandard
+extremes stdresid id
 replace l=. if stdresid>3
 replace l=. if stdresid<-3
 replace L=. if stdresid>3
 replace L=. if stdresid<-3
-extremes stdresid id
 drop stdresid
 
 regress y m
 	lvr2plot, mlabel(id) title("Int. input (log)")
+drop stdresid
 predict stdresid, rstandard
+extremes stdresid id
 replace m=. if stdresid>3
 replace m=. if stdresid<-3
 replace M=. if stdresid>3
 replace M=. if stdresid<-3
-extremes stdresid id
 drop stdresid
 
 save "C:\Users\Erick Gonzales\Documents\1_Contributions\benkyoukai\UCB_cbba\Stata_study\t1_clean.dta", replace

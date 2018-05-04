@@ -1,4 +1,4 @@
-cd "[insert here the adress of the folder where you copy the data and do files]"
+cd "insert here the adress of the folder where you copy the data and do files"
 
 use "t1.dta", clear
 

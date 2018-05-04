@@ -1,10 +1,6 @@
 *asign id
 gen id=_n+100
 
-*which firms for each city?
-tab cityname
-tab cityname size
-
 *change variables' names
 rename sales Y
 rename capital K
@@ -15,7 +11,7 @@ rename int_input M
 *to be studied next time
 
 *Calculate value added
-generate VA=Y-M
+gen VA=Y-M
 
 *Calculate logarithms
 gen y=ln(Y)
