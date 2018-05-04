@@ -5,13 +5,6 @@ gen id=_n+100
 tab cityname
 tab cityname size
 
-*FRANCO:
-tab emp citysize
-
-*PAME:
-tab numsize city
-
-
 *change variables' names
 rename sales Y
 rename capital K
