@@ -13,7 +13,7 @@ Financial and industrial engineering students at UCB.
 - Output
   - [Data cleaned (.dta)](https://github.com/ergoro/re_fin_ind_ucb/blob/master/2018_04_27/t1_clean.dta)
 
-## Data for WBG's "Encuesta de Productividad de Empresas"
+## WBG's "Encuesta de Productividad de Empresas"
 
 ### Describe and clean
 - Input
