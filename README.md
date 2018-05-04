@@ -15,20 +15,13 @@ Financial and industrial engineering students at UCB.
 
 ## Data for WBG's "Encuesta de Productividad de Empresas"
 
-### Describe
+### Describe and clean
 - Input
   - [Data from orignal source (.dta)](http://microdata.worldbank.org/index.php/catalog/1314/get_microdata)
 - Code
   - [wbg_epe_bol_main (.do)](https://github.com/ergoro/re_fin_ind_ucb/blob/master/wbg_enc_prod_emp_bol/wb_epe_bol_main.do)
   - [wbg_epe_bol_describe (.do)](https://github.com/ergoro/re_fin_ind_ucb/blob/master/wbg_enc_prod_emp_bol/wb_epe_bol_describe.do)
-- Output
-  - [Description of data (.doc)](https://docs.google.com/document/d/1FhdTEOBb4qvfj4cMoX_0nh6_D1bAa84JTxhg3_N9aso/edit?usp=sharing)
-  
- ### Clean
-- Input
-  - [Data from orignal source (.dta)](http://microdata.worldbank.org/index.php/catalog/1314/get_microdata)
-- Code
   - [wbg_epe_clean (.do)](https://github.com/ergoro/re_fin_ind_ucb/blob/master/wbg_enc_prod_emp_bol/wb_epe_bol_clean.do)
 - Output
+  - [Description of data (.doc)](https://docs.google.com/document/d/1FhdTEOBb4qvfj4cMoX_0nh6_D1bAa84JTxhg3_N9aso/edit?usp=sharing)
   - [clean data (.dta)]
-  
