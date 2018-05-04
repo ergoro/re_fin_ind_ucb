@@ -1,7 +1,7 @@
 # Research group
 Financial and industrial engineering students at UCB.
 
-## 04 May 2018 (prepared originally for 27 April 2018)
+## PRACTICE: 04 May 2018 (prepared originally for 27 April 2018)
 
 - Input
   - [Data (.csv)](https://github.com/ergoro/re_fin_ind_ucb/blob/master/2018_04_27/t1.csv)
