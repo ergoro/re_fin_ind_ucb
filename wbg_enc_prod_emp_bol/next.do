@@ -12,5 +12,7 @@ tab p4
 tab p4, nolabel
 drop if p4==2
 drop if p4==8
-
+tab p1
+tab p1, nolabel
+drop if p1==2 & firmsize>20
 sum sexo

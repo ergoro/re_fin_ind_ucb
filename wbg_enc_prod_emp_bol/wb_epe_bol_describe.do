@@ -12,6 +12,11 @@ tab sexo
 *4) What is the size distribution of the enterprises ? Can you also comment on the gender balance among workers?
 sum numhom nummuj p3a p3b
 egen firmsize=rowtotal(numhom nummuj)
+*gen pruebafirmsize=.
+*replace pruebafirmsize=numhom + nummuj
+*sum firmsize pruebafirmsize
+*drop if missing(numhom)
+*tab numhom
 *gen firmsize=numhom + nummuj (BE CAREFUL)
 tab firmsize
 gen sizeclass=.
@@ -52,3 +57,11 @@ label define ageclassl 0 "start-up <1" 1 "1 to 5" 2 "5 to 10" 3 "10 to 15" 4 "15
 label values ageclass ageclassl
 tab ageclass
 tab ageclass sizeclass
+
+*ANSWER QUESTIONS 1 TO 6 FOR EVERY REGION
+
+*IMPORTANT POINTS:
+
+*Please avoid modifying (save changes in) the original dataset. You can save changes in DO files.
+
+*If you have comments, write them with and asterisk as done here
