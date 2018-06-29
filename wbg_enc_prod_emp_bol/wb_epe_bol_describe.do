@@ -66,13 +66,13 @@ tab ageclass sizeclass
 
 *IMPORTANT POINTS:
 
-*Please avoid modifying (save changes in) the original dataset (.dta). You can save changes in DO files (.do).
+*Please avoid modifying (save changes in) the original dataset (.dta). You can save changes in DO files (.do)
 
 *If you have comments, write them with and asterisk as done here
 
 *If your code is the same, please write your name (with asterisk before) under each question and say OK or simply write nothing
 
-*If your code is diferent, constitues and improvement or provides more complete information, write your name (with asterisk before) and present your code
+*If your code is different, constitues an improvement, or provides more complete information, write your name (with asterisk before) and present your code
 
 *==========================================================================================
 *1) How many firms where surveyed in each city?
