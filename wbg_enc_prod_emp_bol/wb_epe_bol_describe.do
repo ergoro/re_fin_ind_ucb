@@ -61,6 +61,8 @@ tab ageclass sizeclass
 *==========================================================================================
 *ANSWER QUESTIONS 1 TO 6 FOR EVERY REGION
 *==========================================================================================
+*(LA PAZ, SANTA CRUZ, COCHABAMBA and EL ALTO)
+*==========================================================================================
 
 *IMPORTANT POINTS:
 
@@ -70,7 +72,7 @@ tab ageclass sizeclass
 
 *If your code is the same, please write your name (with asterisk before) under each question and say OK or simply write nothing
 
-*If your code is diferent, constitues and improment or provides more complete information, write your name (with asterisk before) and present your code
+*If your code is diferent, constitues and improvement or provides more complete information, write your name (with asterisk before) and present your code
 
 *==========================================================================================
 *1) How many firms where surveyed in each city?
