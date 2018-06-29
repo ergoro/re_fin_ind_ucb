@@ -58,10 +58,29 @@ label values ageclass ageclassl
 tab ageclass
 tab ageclass sizeclass
 
+*==========================================================================================
 *ANSWER QUESTIONS 1 TO 6 FOR EVERY REGION
+*==========================================================================================
 
 *IMPORTANT POINTS:
 
-*Please avoid modifying (save changes in) the original dataset. You can save changes in DO files.
+*Please avoid modifying (save changes in) the original dataset (.dta). You can save changes in DO files (.do).
 
 *If you have comments, write them with and asterisk as done here
+
+*If your code is the same, please write your name (with asterisk before) under each question and say OK or simply write nothing
+
+*If your code is diferent, constitues and improment or provides more complete information, write your name (with asterisk before) and present your code
+
+*==========================================================================================
+*1) How many firms where surveyed in each city?
+
+*2) For each city, how many are rural and urban?
+
+*3) How many females and males (responsible for answering the survey)?
+
+*4) What is the size distribution of the enterprises ? Can you also comment on the gender balance among workers?
+
+*5) Which are the main sectors (actividad principal)? Any comment on the sector by size (<5; 5-10 and >10 employees)?
+
+*6) On average, how old are the surveyed firms? Does this change by size (<5; 5-10 and >10 employees)?
