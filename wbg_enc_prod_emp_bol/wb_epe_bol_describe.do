@@ -76,6 +76,8 @@ tab ageclass sizeclass
 
 *==========================================================================================
 *1) How many firms where surveyed in each city?
+*FRANCO:
+tab ciudad
 
 *2) For each city, how many are rural and urban?
 
