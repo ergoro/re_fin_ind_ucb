@@ -97,6 +97,8 @@ restore
 *FRANCO:
 tab ciudad
 >>>>>>> 579626f9446c155d2340463bc6b0b06799551f4d
+*SEBASTIAN
+tab ciudad
 
 *2) For each city, how many are rural and urban?
 tab ciudad ubic
