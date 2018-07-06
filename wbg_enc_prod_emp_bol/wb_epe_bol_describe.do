@@ -76,6 +76,7 @@ tab ageclass sizeclass
 
 *==========================================================================================
 *1) How many firms where surveyed in each city?
+<<<<<<< HEAD
 tab ciudad
 
 tab ciudad, nolabel
@@ -92,6 +93,10 @@ preserve
 keep if ciudad==2
 tab ciudad
 restore
+=======
+*FRANCO:
+tab ciudad
+>>>>>>> 579626f9446c155d2340463bc6b0b06799551f4d
 
 *2) For each city, how many are rural and urban?
 tab ciudad ubic
