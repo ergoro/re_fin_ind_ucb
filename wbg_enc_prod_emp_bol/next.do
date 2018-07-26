@@ -16,3 +16,4 @@ tab p1
 tab p1, nolabel
 drop if p1==2 & firmsize>20
 sum sexo
+*8) Provide three interesting facts that you can find from the data.
