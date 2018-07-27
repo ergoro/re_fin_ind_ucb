@@ -263,8 +263,11 @@ by ageclass: tabstat firmsize firmsizei age agr, stat(mean sd min max n)
 regress agr firmsize
 regress agr age
 regress agr firmsize age
+scatter agr firmsize
+scatter agr age
 gen lnagr=ln(agr)
 gen lnfirmsize=ln(firmsize)
 gen lnage=ln(age)
 scatter lnagr lnfirmsize
 scatter lnagr lnage
+*agr significa tasa de crecimiento anual
