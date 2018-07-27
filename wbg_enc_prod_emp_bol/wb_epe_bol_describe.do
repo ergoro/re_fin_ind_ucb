@@ -228,3 +228,38 @@ replace gr=(firmsize-firmsizei)/firmsizei
 gen agr=.
 replace agr=gr/age
 sum firmsize firmsizei age p3c gr agr
+*by size
+gen sizeclass=.
+replace sizeclass=0 if firmsize<=0
+replace sizeclass=1 if firmsize>0 & firmsize<=1
+replace sizeclass=2 if firmsize>1 & firmsize<=2
+replace sizeclass=3 if firmsize>2 & firmsize<=3
+replace sizeclass=4 if firmsize>3 & firmsize<=4
+replace sizeclass=5 if firmsize>4 & firmsize<=5
+replace sizeclass=6 if firmsize>5 & firmsize<=10
+replace sizeclass=7 if firmsize>10 & firmsize<=50
+replace sizeclass=8 if firmsize>50 & firmsize<=100
+replace sizeclass=9 if firmsize>100
+tab sizeclass
+label define sizeclassname 0 "0_micro" 1 "1_micro" 2 "2_micro" 3 "3_micro" 4 "4_micro" 5 "5_micro" 6 "5-10_micro" 7 "10-50_small" 8 "50-100_medium" 9 ">100_large"
+label values sizeclass sizeclassname
+tab sizeclass
+sort sizeclass
+by sizeclass: tabstat firmsize firmsizei age agr, stat(mean sd min max n)
+*by age
+gen ageclass=.
+replace ageclass=0 if age<=1
+replace ageclass=1 if age>1 & age<=5
+replace ageclass=2 if age>5 & age<=10
+replace ageclass=3 if age>10 & age<=15
+replace ageclass=4 if age>15 & age<=25
+replace ageclass=5 if age>25
+tab ageclass
+label define ageclassl 0 "start-up <1" 1 "1 to 5" 2 "5 to 10" 3 "10 to 15" 4 "15 to 25" 5 "mature >25"
+label values ageclass ageclassl
+tab ageclass
+sort ageclass
+by ageclass: tabstat firmsize firmsizei age agr, stat(mean sd min max n)
+regress agr firmsize
+regress agr age
+regress agr firmsize age
