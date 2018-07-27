@@ -258,6 +258,12 @@ pame
  replace crecimiento= 2 if tasa<1
  tab crecimiento
  
+ tasa: es tasa de crecimiento
+ tasa a: tasa anual
+ firmsize1 es numero total de empleados actual
+ firmsize2 es numero de empleados cuando empezo
+ crecimiento=1 la tasa es positiva
+ crecimiento=2 la tasa es negativa
  
  inciso b
  summarize tasa
