@@ -239,3 +239,28 @@ gen agr=.
 replace agr=gr/age
 sum firmsize firmsizei age p3c gr agr
 >>>>>>> eae52989e365e1df471583ce0f2b6ffc7098a17a
+
+
+pame
+ inciso a
+ 
+ gen age=.
+ replace age=2007-p2
+ egen firmsize1= rowtotal(nummuj numhom)
+ gen firmsize2=.
+ replace firmsize2= p3c
+  gen tasa=.
+  replace tasa=(firmsize1-firmsize2)/firmsize2
+  gen tasaa=.
+  replace tasaa= tasa/age
+   gen crecimiento=.
+ replace crecimiento=1 if tasa>=1
+ replace crecimiento= 2 if tasa<1
+ tab crecimiento
+ 
+ 
+ inciso b
+ summarize tasa
+
+inciso c
+summarize tasa firmsize1 age
