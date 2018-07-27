@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-*Mari
-=======
 *General questions about the dataset
 
 *1) How many firms where surveyed in each city?
@@ -79,11 +76,7 @@ tab ageclass sizeclass
 
 *==========================================================================================
 *1) How many firms where surveyed in each city?
-<<<<<<< HEAD
-pame 
-=======
 *pame 
->>>>>>> eae52989e365e1df471583ce0f2b6ffc7098a17a
 tab ciudad 
 
 
@@ -129,9 +122,6 @@ tab sizeclass ciudad
 tab p1 ciudad
 
 *6) On average, how old are the surveyed firms? Does this change by size (<5; 5-10 and >10 employees)?
-<<<<<<< HEAD
-pam 
-=======
 tab ciudad
 
 tab ciudad, nolabel
@@ -199,12 +189,12 @@ tab p1 sizeclass if ciudad==4
 *6) On average, how old are the surveyed firms? Does this change by size (<5; 5-10 and >10 employees)?
 tab p2
 
->>>>>>> eae52989e365e1df471583ce0f2b6ffc7098a17a
 gen age=.
 replace age=2007-p2
 gen ageclass=.
 replace ageclass=0 if age<=1
 replace ageclass=1 if age>1 & age<=5
+<<<<<<< HEAD
 tab ageclass ciudad
 replace ageclass=2 if age >5 & age<=10
 replace ageclass=3 if age>10
@@ -212,11 +202,8 @@ replace ageclass=3 if age>10
 *ADri
 *lo mismo
 
- l
  
  
-<<<<<<< HEAD
-=======
 =======
 replace ageclass=2 if age>5 & age<=10
 replace ageclass=3 if age>10 & age<=15
@@ -230,7 +217,6 @@ tab ageclass sizeclass
 tab ciudad ageclass
 
 *7) a) Calculate growth rates for each firm (remember each firm started in a different year). b) Provide summary statistics for growth rates. c) Provide summary statistics for growth rates by size class and age.
->>>>>>> 6615b216626c2de0a829d1ce8f78bd92a579be89
 gen age=.
 replace age=2007-p2
 tab age
@@ -242,7 +228,6 @@ replace gr=(firmsize-firmsizei)/firmsizei
 gen agr=.
 replace agr=gr/age
 sum firmsize firmsizei age p3c gr agr
-<<<<<<< HEAD
 *by size
 gen sizeclass=.
 replace sizeclass=0 if firmsize<=0
@@ -278,88 +263,8 @@ by ageclass: tabstat firmsize firmsizei age agr, stat(mean sd min max n)
 regress agr firmsize
 regress agr age
 regress agr firmsize age
-=======
-<<<<<<< HEAD
-*Pregunta 7 c)
-gen sizeclass=.
-replace sizeclass=0 if firmsize<=10
-replace sizeclass=1 if firmsize >10 &firmsize<=50
-replace sizeclass=2 if firmsize>50 &firmsize<=100
-replace sizeclass=3 if firmsize >100
-preserve
-keep if sizeclass==0
-sum sizeclass agr
-restore
-preserve
-keep if sizeclass==1
-sum sizeclass agr
-restore
-preserve
-keep if sizeclass==2
-sum sizeclass agr
-restore
-preserve
-keep if sizeclass==3
-sum sizeclass agr
-restore
-gen agerange=.
-replace agerange=1 if age<=10
-replace agerange=2 if age>10 & age<=20
-replace agerange=3 if age>20 & age<=30
-replace agerange=4 if age>30 & age<=40
-replace agerange=5 if age>40
-preserve
-keep if agerange==1
-sum agerange agr
-restore
-preserve 
-keep if agerange==2
-sum agerange agr
-restore
-preserve 
-keep if agerange==3
-sum agerange agr
-restore
-preserve 
-keep if agerange==4
-sum agerange agr
-restore
-preserve 
-keep if agerange==5
-sum agerange agr
-restore
-=======
->>>>>>> eae52989e365e1df471583ce0f2b6ffc7098a17a
-
-
-pame
- inciso a
- 
- gen age=.
- replace age=2007-p2
- egen firmsize1= rowtotal(nummuj numhom)
- gen firmsize2=.
- replace firmsize2= p3c
-  gen tasa=.
-  replace tasa=(firmsize1-firmsize2)/firmsize2
-  gen tasaa=.
-  replace tasaa= tasa/age
-   gen crecimiento=.
- replace crecimiento=1 if tasa>=1
- replace crecimiento= 2 if tasa<1
- tab crecimiento
- 
- tasa: es tasa de crecimiento
- tasa a: tasa anual
- firmsize1 es numero total de empleados actual
- firmsize2 es numero de empleados cuando empezo
- crecimiento=1 la tasa es positiva
- crecimiento=2 la tasa es negativa
- 
- inciso b
- summarize tasa
-
-inciso c
-summarize tasa firmsize1 age
->>>>>>> 6615b216626c2de0a829d1ce8f78bd92a579be89
->>>>>>> 94f96a5b619569e3e1c80ebb3719d2c1a290da99
+gen lnagr=ln(agr)
+gen lnfirmsize=ln(firmsize)
+gen lnage=ln(age)
+scatter lnagr lnfirmsize
+scatter lnagr lnage
