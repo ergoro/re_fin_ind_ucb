@@ -29,3 +29,19 @@ scatter p4_13 p2_1a
 =======
 *Pame y jorge
 >>>>>>> 2053834050924b1c4782b902a4f6ee2c105cd468
+*correcciones 
+gen age=.
+replace age=2007-p2
+sum numhom nummuj p3a p3b
+gen firmsize=rowtotal (numhom nummuj)
+reg p4_13 p4_7d1 p3_3d p2_1a ciudad firmsize age 
+help extremes 
+tabulate p4_13 
+tabulate p4_7d1 
+tabulate p3_3d
+tabulate p2_1a
+tabulate ciudad 
+tabulate firmsize 
+tabulate age 
+tab p4_13 no label
+reg p4_13 p4_7d1 p3_3d p2_1a ciudad firmsize age if p4_13!=9, & if p4_7d1!=0
