@@ -1,4 +1,5 @@
 *Clean dataset
+<<<<<<< HEAD
  gen age=.
  replace age=2007-p2
  sum numhom nummuj p3a p3b
@@ -25,3 +26,6 @@ histogram p4_7d1
 histogram p3_3d
 histogram p2_1a
 scatter p4_13 p2_1a
+=======
+*Pame y jorge
+>>>>>>> 2053834050924b1c4782b902a4f6ee2c105cd468
