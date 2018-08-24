@@ -44,4 +44,12 @@ tabulate ciudad
 tabulate firmsize 
 tabulate age 
 tab p4_13 no label
-reg p4_13 p4_7d1 p3_3d p2_1a ciudad firmsize age if p4_13!=9, & if p4_7d1!=0
+reg p4_13 p4_7d1 p3_3d p2_1a ciudad firmsize age if p4_13!=9
+gen var1=.
+replace var1=ln(p4_13)
+gen var2=.
+replace var2=ln(p4_7d1)
+histogram var1
+
+
+
