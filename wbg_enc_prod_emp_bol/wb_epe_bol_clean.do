@@ -3,7 +3,7 @@
  gen age=.
  replace age=2007-p2
  sum numhom nummuj p3a p3b
- gen firmsize=rowtotal (numhom nummuj)
+ egen firmsize=rowtotal (numhom nummuj)
  reg p4_13 ciudad
 reg p4_13 age
 reg p4_13 firmsize
@@ -33,8 +33,9 @@ scatter p4_13 p2_1a
 gen age=.
 replace age=2007-p2
 sum numhom nummuj p3a p3b
-gen firmsize=rowtotal (numhom nummuj)
+egen firmsize=rowtotal (numhom nummuj)
 reg p4_13 p4_7d1 p3_3d p2_1a ciudad firmsize age 
+sum p4_13 p4_7d1 p3_3d p2_1a ciudad firmsize age 
 help extremes 
 tabulate p4_13 
 tabulate p4_7d1 
@@ -43,7 +44,7 @@ tabulate p2_1a
 tabulate ciudad 
 tabulate firmsize 
 tabulate age 
-tab p4_13 no label
+tab p4_13, nolabel
 reg p4_13 p4_7d1 p3_3d p2_1a ciudad firmsize age if p4_13!=9
 gen var1=.
 replace var1=ln(p4_13)
@@ -51,5 +52,37 @@ gen var2=.
 replace var2=ln(p4_7d1)
 histogram var1
 
-
-
+*Erick
+*Example: Ventas and Firmsize
+*Ventas
+tab p4_13
+tab p4_13, nolabel
+extremes p4_13
+gen ventas=p4_13
+replace ventas=. if (ventas==9)
+gen logventas=ln(ventas)
+*Firm size
+tab numhom
+extremes numhom
+tab nummuj
+extremes nummuj
+egen firmsize=rowtotal(numhom nummuj)
+tab firmsize
+extremes firmsize
+gen logfirmsize=ln(firmsize)
+*Post-estimation of outliers
+twoway (scatter ventas firmsize, mlabel(id)), ysize(20) xsize(20) ytitle("Sales (log)") xtitle("Workers (log)") caption("Source: Bolivia, ES")
+twoway (scatter logventas logfirmsize, mlabel(id)), ysize(20) xsize(20) ytitle("Sales (log)") xtitle("Workers (log)") caption("Source: Bolivia, ES")
+twoway (scatter logventas logfirmsize, mlabel(id)), by(ciudad) ysize(20) xsize(20) ytitle("Sales (log)") xtitle("Workers (log)") caption("Source: Bolivia, ES")
+regress logventas logfirmsize
+	lvr2plot, mlabel(id) title("Workers (log)")
+predict stdresid, rstandard
+tab stdresid
+extremes stdresid id
+replace logfirmsize=. if stdresid!=. & stdresid > 3
+replace logfirmsize=. if stdresid!=. & stdresid < -3
+replace firmsize=. if stdresid!=. & stdresid > 3
+replace firmsize=. if stdresid!=. & stdresid < -3
+extremes stdresid id
+drop stdresid
+*age
