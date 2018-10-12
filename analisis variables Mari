@@ -1,0 +1,18 @@
+tab Sexo
+histogram Sexo, bin(4) frequency
+summ Edad, det
+graph pie, over(Edad)
+tab Estado_Civil
+histogram Estado_Civil, discrete frequency addlabel
+tab Nivel_Estudios
+tab Profesion
+tab Lugar_nacimiento_pais
+tab Ciudad_residencia
+tab Tiempo_residencia
+tabstat ELOC_Int_1 ELOC_Int_2 ELOC_Int_3, stat(mean sd min p50 max iqr cv skewness kurtosis n)
+histogram ELOC_Int_1, bin(10) frequency addlabel
+histogram ELOC_Int_2, bin(10) frequency addlabel
+histogram ELOC_Int_3, bin(10) frequency addlabel
+tabstat ELOC_Ch_1 ELOC_Ch_2, stat(mean sd min p50 max iqr cv skewness kurtosis n)
+histogram ELOC_Ch_1, bin(10) frequency addlabel
+histogram ELOC_Ch_2, bin(10) frequency addlabel
