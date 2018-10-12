@@ -61,7 +61,17 @@ histogram FinBias_CSRInv_2, discrete percent
 tab FinBias_CSRInv_3
 sum FinBias_CSRInv_3 
 histogram FinBias_CSRInv_3, discrete percent
-   
+
+*Mi esposo/esposa tiene una gran influencia mis decisiones de inversión (solo responda si está casado/casada)*
+tab FinBias_Spouse_1
+sum FinBias_Spouse_1
+histogram FinBias_Spouse_1, discrete percent
+ 
+*Hago participar y consulto a mi esposo/esposa respecto a decisiones de ahorro e inversiones (solo responda si está casado/casada)* 
+tab FinBias_Spouse_2
+sum FinBias_Spouse_2
+histogram FinBias_Spouse_2, discrete percent
+  
 *SECCION DONDE SE EVALUA LA FORMA DE ENSAR RELACIONADA CON EL TRABAJO IDEAL O LUGAR DE TRABAJO IDEAL SIN TENER EN CUENTA SU TRABAJO ACTUAL, O SI USTED NO TIENE ALGUNO*
 
 *Sigo la opinión de compañeros de trabajo en las decisiones - Sigo mi propia opinión en las decisiones*
