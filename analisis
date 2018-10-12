@@ -1,0 +1,32 @@
+*analisis variables: Los problemas económicos de Bolivia se pueden atribuir a las malas intenciones de los países que le causaron su mediterraneidad, La mediterraneidad es el resultado de las malas intenciones que tienen otros países y La pobreza se debe a los prejuicios y discriminación que existen en los procesos de contratación de 
+*personal en empresas públicas y privadas.
+tabstat ABS_Int_2 ABS_Int_3  Attribution_Ext_1, stat(mean sd min p50 max iqr cv skewness kurtosis n)
+histogram ABS_Int_2, normal
+histogram ABS_Int_3, normal
+histogram Attribution_Ext_1, normal
+correlate ABS_Int_2 ABS_Int_3  Attribution_Ext_1
+correlate ABS_Int_2 ABS_Int_3  Attribution_Ext_1, covariance 
+*analisis variables: La pobreza se debe a fallas en la economía para crear suficientes fuentes laborales, La pobreza se debe a prejuicios y discriminación en los salarios y La pobreza se debe a la corrupción de los gobernantes de turno.
+tabstat Attribution_Ext_2 Attribution_Ext_3 Attribution_Ext_4, stat (mean sd min p50 max iqr cv skewness kurtosis n)
+histogram Attribution_Ext_2, normal
+histogram Attribution_Ext_3, normal
+histogram Attribution_Ext_4, normal
+correlate Attribution_Ext_2 Attribution_Ext_3 Attribution_Ext_4
+correlate Attribution_Ext_2 Attribution_Ext_3 Attribution_Ext_4, covariance
+
+*analisi variables: La pobreza se debe a que los pobres no intentan mejorar su situación por sí mismos, La pobreza se debe a que los pobres no se esfuerzan por mejorar su situación y La pobreza se debe a que los pobres tienen poca motivación de mejorar porque dependen de la ayuda
+*del gobierno.
+tabstat Attribution_Int_1 Attribution_Int_2 Attribution_Int_3, stat (mean sd min p50 max iqr cv skewness kurtosis n)
+histogram Attribution_Int_1, normal
+histogram Attribution_Int_2, normal
+histogram Attribution_Int_3, normal
+correlate Attribution_Int_1 Attribution_Int_2 Attribution_Int_3
+correlate Attribution_Int_1 Attribution_Int_2 Attribution_Int_3, covariance
+*analisis variables:La pobreza se debe a que las personas tienen una educación deficiente, Ser pobre se debe a haber nacido en condición de pobreza y La pobreza se debe a la destrucción de la familia.
+tabstat Attribution_Cult_1 Attribution_Cult_2 Attribution_Cult_3, stat(mean sd min p50 max iqr cv skewness kurtosis n)
+histogram Attribution_Cult_1, normal
+histogram Attribution_Cult_2, normal
+histogram Attribution_Cult_3, normal
+correlate Attribution_Cult_1 Attribution_Cult_2 Attribution_Cult_3
+correlate Attribution_Cult_1 Attribution_Cult_2 Attribution_Cult_3, covariance
+
