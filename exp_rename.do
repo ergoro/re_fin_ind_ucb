@@ -8,7 +8,7 @@ rename Edad edad
 **Percepciones del Control Economico
 
 **Expectativas del Trabajo
-rename UAI1 riesgo
+rename UAI1 riesgo1
 
 **Mediterraneidad y Pobreza
 
@@ -20,7 +20,7 @@ label variable sexo "Esta variable indica el sexo del encuestado: Binaria"
 **Percepciones del Control Economico
 
 **Expectativas del Trabajo
-label variable riesgo "Aversion al riesgo: (A) La incertidumbre es algo normal en la vida, y es aceptada como viene; (B) La incertidumbre inherente a la vida es una amenaza continua que debe ser combatida."
+label variable riesgo1 "Aversion al riesgo: (A) La incertidumbre es algo normal en la vida, y es aceptada como viene; (B) La incertidumbre inherente a la vida es una amenaza continua que debe ser combatida."
 
 **Mediterraneidad y Pobreza
 
@@ -31,7 +31,7 @@ describe sexo
 **Percepciones del Control Economico
 
 **Expectativas del Trabajo
-describe riesgo
+describe riesgo1
 
 **Mediterraneidad y Pobreza
 
