@@ -1,0 +1,54 @@
+rename IDV1 ego1 
+label variable ego1 "Egocentrismo:(A)Sigo la opinion de mis companeros(B) Sigo mi propia opinion"
+rename IDV2 ego2
+label variable ego2 "Egocentrismo:(A)Los demas influyen en mi forma de hacer las cosas (B) Hago las cosas a mi manera"
+rename IDV3 indtrab
+label variable indtrab "Individualidad en el trabajo:(A)Trabajo y decido con otros (B)Trabajo y decido solo"
+rename IDV4 exito
+label variable exito "(A) Exito de grupo (B) Exito individual"
+rename IDV5 indrec 
+label variable indrec "Individualidad en las recompensas:(A)Bienestar comun (B)Recompensas individales"
+rename IDV6 inddec 
+label variable inddec "Individualidad en las decisiones:(A)Decisiones en grupo (B)Decisiones individuales"
+rename UAI1 incert 
+label variable incert "Incertidumbre:(A) Normal y aceptada (B)Amenaza continua"
+rename UAI2 rutina
+label variable rutina "Rutina:(A)Vida de incertidumbre y riesgos (B)Manera rutinaria de vivir"
+rename UAI3 riesgo
+label variable riesgo "Toma de Riesgos:(A)Tomo riesgos a menudo (B)Evito tomar riesgos"
+rename UAI4 cambio
+label variable cambio "Personas y conceptos desconocidos: (A) Me acerco (B) Evito"
+rename UAI5 nuevo
+label variable nuevo "Busqueda de cosas buenas:(A)Lo diferente es bueno (B)Lo diferente es peligroso"
+rename UAI6 nervios
+label variable nervios "Nerviosismo del encuestado: (A) Nunca (B) Siempre"
+rename UAI7 compt
+label variable compt "Competencia entre colegas: (A)Es buena (B)Es perjudicial"
+rename UAI8 instruc
+label variable instruc "Instrucciones:(A) Especificas (B) Generales"
+rename UAI9 instruc2
+label variable instruc2 "Instrucciones:(A)No muy detalladas (B)Muy detalladas"
+rename UAI10 instruc3
+label variable instruc3 "Instrucciones:(A)Seguidas de manera flexible (B)Seguidas muy de cerca"
+rename UAI11 estanda
+label variable estanda "Procedimientos estandarizados:(A)Son molestos (B)Son de ayuda"
+rename MAS1 genero1
+label variable genero1 "Prejuicios:(A)HombresYMujeres responsables(B) Hombres responsables, mujeres carinosas"
+rename MAS2 genero2
+label variable genero2 "Prejuicios:(A)HyM resuelven problemas con logica e intuicion (B) Hombres logica y mujeres intuicion"
+rename PDI1 sup 
+label variable sup "Superiores:(A)Deben pedir opiniones a los subordinados(B)No deben pedir opiniones a los demas"
+rename PDI2 supdec
+label variable supdec "Decisiones de los superiores:(A)Con los subordinados (B)Solos"
+rename PDI3 suppod
+label variable suppod "Poder de los superiores:(A)No deben resaltar su autoridad (B)Deben resaltar su autoridad"
+rename PDI4 supcontra
+label variable supcontra "Contradiccion a los superiores:(A)Subordinados pueden contradecirlos (B)No deben contradecirlos"
+rename LTO1 fut1
+label variable fut1 "Futuro: (A) Planes a corto plazo (B) Planes a largo plazo"
+rename LTO2 fut2 
+label variable fut2 "Futuro:(A)Viviendo y disfrutando cada dia (B)Trabajando para el futuro"
+rename LTO3 fut3 
+label variable fut3 "Futuro:(A)Gastando dinero y divirtiendome (B)Ahorrando para el futuro"
+rename LTO4 fut4 
+label variable fut4 "Futuro:(A)Renunciando al exito por la diversion de hoy (B)Renunciando a la diversion por el exito futuro"
