@@ -1,0 +1,92 @@
+label variable ABS_Ext_1 "La mediterraneidad es la principal causante de la pobreza en Bolivia."
+label variable ABS_Ext_2 "La mediterraneidad es responsable de la mayorÃ­a de las pÃ©rdidas econÃ³micas en Bolivia."
+label variable ABS_Ext_3 "La mediterraneidad es la culpable de la mayorÃ­a de los problemas de la sociedad boliviana."
+label variable ABS_Int_1 "Los paÃ­ses que provocaron la mediterraneidad de Bolivia estaban motivados por malas intenciones."
+label variable ABS_Int_2 "La mayorÃ­a de los problemas econÃ³micos de Bolivia se pueden atribuir a las malas intenciones."
+label variable ABS_Int_3 "La mediterraneidad de Bolivia es el resultado de las malas intenciones que tienen otros paÃ­ses"
+label variable Attribution_Ext_1 "La pobreza se debe a los prejuicios y discriminaciÃ³n."
+label variable Attribution_Ext_2 "La pobreza se debe a fallas en la economÃ­a para crear suficientes fuentes laborales."
+label variable Attribution_Ext_3 "La pobreza se debe a prejuicios y discriminaciÃ³n en los salarios."
+label variable Attribution_Ext_4 "La pobreza se debe a la corrupciÃ³n de los gobernantes de turno."
+label variable Attribution_Int_1 "La pobreza se debe a que los pobres no intentan mejorar su situaciÃ³n por sÃ­ mismos."
+label variable Attribution_Int_2 "La pobreza se debe a que los pobres no se esfuerzan por mejorar su situaciÃ³n."
+label variable Attribution_Int_3 "La pobreza se debe a que los pobres tienen poca motivaciÃ³n de mejorar"
+label variable Attribution_Cult_1 "La pobreza se debe a que las personas tienen una educaciÃ³n deficiente."
+label variable Attribution_Cult_2 "Ser pobre se debe a haber nacido en condiciÃ³n de pobreza."
+label variable Attribution_Cult_3 "La pobreza se debe a la destrucciÃ³n de la familia."
+rename ABS_Ext_1 culpabilidad1
+rename ABS_Ext_2 culpabilidad2
+rename ABS_Ext_3 culpabilidad3
+rename ABS_Int_1 causas1
+rename ABS_Int_2 causas2
+rename ABS_Int_3 causas3
+rename Attribution_Ext_1 atext1
+rename Attribution_Ext_2 atext2
+rename Attribution_Ext_3 atext3
+rename Attribution_Ext_4 atext4
+rename Attribution_Int_1 atint1
+rename Attribution_Int_2 atint2
+rename Attribution_Int_3 atint3
+rename Attribution_Cult_1 atcult1
+rename Attribution_Cult_2 atcult2
+rename Attribution_Cult_3 atcult3
+rename ELOC_Int_1 pfinanzas1
+label variable pfinanzas "Volverme rico depende de mis habilidades."
+rename ELOC_Int_2 pfinanzas2 
+label variable pfinanzas "A largo plazo, la gente que cuida sus finanzas tiene dinero."
+rename ELOC_Int_3 pfinanzas3 
+label variable pfinanzas "Si me vuelvo pobre, serÃ¡ por mi culpa"
+rename ELOC_Ch_1 suerte1
+label variable suerte1 "Para mÃ­, no siempre es prudente ahorrar porque muchas cosas dependen de la buena o mala suerte."
+rename ELOC_Ch_2 suerte2
+label variable suerte2 "Volverse rico no tiene nada que ver con la suerte."
+rename ELOC_Ch_3 suerte3
+label variable suerte3 "En relaciÃ³n al dinero, no es mucho lo que puedes hacer por ti mismo cuando eres pobre."
+rename ELOC_Den_1 pobreza1
+label variable pobreza1 "La pobreza de las personas se debe a su pereza."
+rename ELOC_Den_2 pobreza2
+label variable pobreza2 "Se exagera la seriedad de la pobreza."
+rename ELOC_Den_3 pobreza3
+label variable pobreza3 "Los polÃ­ticos pueden hacer muy poco para prevenir la pobreza."
+rename ELOC_PowOthers_1 dependencia1
+label variable dependencia1 "A pesar de mis habilidades, no podrÃ© estar mejor si no pido ayuda"
+rename ELOC_PowOthers_2 dependencia2
+label variable dependencia2 "Financieramente obtener lo que quiero requiere que agrade a los demas"
+rename ELOC_PowOthers_3 dependencia3
+label variable dependencia3 "Siento que mis finanzas dependen mayoritariamente de la gente con poder."
+rename FinBias_OvConf_1 confianza1
+label variable confianza1 "Comparado con otras personas, yo puedo realizar decisiones de inversiÃ³n mÃ¡s precisas."
+rename FinBias_OvConf_2 confianza2
+label variable confianza2 "Tengo el mismo nivel de conocimientos que los expertos en finanzas."
+rename FinBias_OvConf_3 confianza3
+label variable confianza3 "Me considero un inversor inteligente."
+rename FinBias_SelfCont_1 ahorro1
+label variable ahorro1 "Me es difÃ­cil controlar mis gastos y no me queda nada para realizar inversiones"
+rename FinBias_SelfCont_2 ahorro2
+label variable ahorro2 "No me es posible ahorrar para el futuro."
+rename FinBias_SelfCont_3 ahorro3
+label variable ahorro3 "Si tengo dinero, lo gasto."
+rename FinBias_CatTend_1 categorizacion1
+label variable categorizacion1 "Separo mi dinero en cuentas separadas basadas en el uso que le darÃ© al mismo"
+rename FinBias_CatTend_2 categorizacion2
+label variable categorizacion2 "Separo mi dinero en cuentas separadas basadas en las fuentes de ingreso del mismo"
+rename FinBias_BugTend_1 inversion1
+label variable inversion1 "Cuando recibo dinero, primero lo separo en dinero para ahorros e inversiones."
+rename FinBias_BugTend_2 inversion2
+label variable inversion2 "Tengo preestablecido un presupuesto mensual para inversiones."
+rename FinBias_AdapTend_1 cambiosinv1
+label variable cambiosinv1 "Mi patrÃ³n de inversiones ha cambiado a lo largo de los aÃ±os."
+rename FinBias_AdapTend_2 cambiosinv2
+label variable cambiosinv2 "Mis decisiones de inversiÃ³n dependen de las fluctuaciones del mercado."
+rename FinBias_AdapTend_3 cambiosinv3
+label variable cambiosinv3 "Mis opciones de inversiÃ³n dependen de las metas financieras que quiero lograr."
+rename FinBias_CSRInv_1 interes1
+label variable interes1 "Las empresas que siguen practicas Ã©ticas me atraen mÃ¡s"
+rename FinBias_CSRInv_2 interes2
+label variable interes2 "Las empresas que se fundan basadas en un sistema de valores corporativos son buenas inversiones"
+rename FinBias_CSRInv_3 interes3
+label variable interes3 "InvertirÃ­a en empresas que tienen prÃ¡cticas de responsabilidad social empresarial"
+rename FinBias_Spouse_1 influencia1
+label variable influencia1 "Mi esposo/esposa tiene una gran influencia mis decisiones de inversiÃ³n"
+rename FinBias_Spouse_2 influencia2
+label variable influencia2 "Hago participar y consulto a mi esposo/esposa respecto a decisiones de ahorro e inversiones"
