@@ -35,9 +35,6 @@ label variable pfinanzas2 "A largo plazo, la gente que cuida sus finanzas tiene 
 rename ELOC_Int_3 pfinanzas3 
 label variable pfinanzas3 "Si me vuelvo pobre, serÃ¡ por mi culpa"
 
-*****ERROR
-
-
 ***Influencia de la suerte
 rename ELOC_Ch_1 suerte1
 label variable suerte1 "Para mÃ­, no siempre es prudente ahorrar porque muchas cosas dependen de la buena o mala suerte."
@@ -172,11 +169,6 @@ rename ABS_Ext_2 culpabilidad2
 label variable culpabilidad2 "La mediterraneidad es responsable de la mayorÃ­a de las pÃ©rdidas econÃ³micas en Bolivia."
 rename ABS_Ext_3 culpabilidad3
 label variable culpabilidad2 "La mediterraneidad es la culpable de la mayorÃ­a de los problemas de la sociedad boliviana."
-
-
-*ERROR
-
-
 ***Causas de la mediterraneidad
 rename ABS_Int_1 causas1
 label variable causas1 "Los paÃ­ses que provocaron la mediterraneidad de Bolivia estaban motivados por malas intenciones."
@@ -207,9 +199,3 @@ rename Attribution_Cult_2 atcult2
 label variable atcult2 "Ser pobre se debe a haber nacido en condiciÃ³n de pobreza."
 rename Attribution_Cult_3 atcult3
 label variable atcult3 "La pobreza se debe a la destrucciÃ³n de la familia."
-
-
-*ERROR
-
-
-
