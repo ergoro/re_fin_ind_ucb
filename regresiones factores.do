@@ -1,0 +1,14 @@
+
+
+*regresiones factores*
+
+
+reg atribucionexternapobreza tipificacion responsabilidadfinanzas dependenciasersuperior 
+
+reg atribucioninternapobreza percepcionpobreza individualidad autoritarismo atribucionexternapobreza atribucionculturalpobreza 
+
+reg causasmediterraneidad estandarizacion culpamediterraneidad atribucionculturalpobreza
+
+reg estandarizacion priorizarinversiones atribucionculturalpobreza
+
+reg infsuerte individualidad percepcionpobreza dependenciasersuperior dificultadahorro priorizarinversiones cambiosdeinversion influenciaconyugue atribucioninternapobreza
