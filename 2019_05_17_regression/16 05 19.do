@@ -1,0 +1,20 @@
+*Culpamediterraneidad en funcion de success atribution y cognitive bias (las que tienen * son las mas elevadas
+reg culpamediterraneidad infsuerte percepcionpobreza dependenciasersuperior confianzainversiones dificultadahorro categorizardinero priorizarinversiones
+reg culpamediterraneidad dependenciasersuperior confianzainversiones dificultadahorro 
+
+****Atribucion pobreza (interna, externa y cultural) en funcion de cognitive biases y medit
+
+*Atribucion interna
+reg atribucioninternapobreza interesalinvertir infsuerte culpamediterraneidad atribucionexternapobreza
+reg atribucioninternapobreza interesalinvertir infsuerte culpamediterraneidad atribucionexternapobreza
+reg atribucioninternapobreza cambiosdeinversion atribucionexternapobreza
+
+*Atribucion externa
+reg atribucionexternapobreza interesalinvertir influenciaconyugue atribucioninternapobreza 
+reg atribucionexternapobreza interesalinvertir causasmediterraneidad atribucioninternapobreza  
+
+*Atribucion cultural
+
+reg atribucionculturalpobreza cambiosdeinversion interesalinvertir influenciaconyugue culpamediterraneidad causasmediterraneidad  
+reg atribucionculturalpobreza cambiosdeinversion interesalinvertir influenciaconyugue culpamediterraneidad  
+reg atribucionculturalpobreza interesalinvertir influenciaconyugue culpamediterraneidad causasmediterraneidad atribucionexternapobreza atribucioninternapobreza  
